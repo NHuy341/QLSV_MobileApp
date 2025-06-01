@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nen_header1"
+    android:orientation="vertical"
+    tools:context=".ChungChi">
+
+    <fragment
+        android:id="@+id/topBar"
+        class="com.example.quanlysinhvien_gk.TopBarHomeIconFragment"
+        tools:layout="@layout/fragment_top_bar_home_icon"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+    </fragment>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mainBackground"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mainBackground">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Danh Sách Chứng Chỉ"
+                android:textColor="@color/mainText"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <SearchView
+                android:id="@+id/classroomSearchView"
+                android:layout_width="257dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+
+                android:gravity="center"
+                android:iconifiedByDefault="false"
+                android:queryHint="Tìm chứng chỉ" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/mainBackground"
+                android:paddingTop="10dp"
+                android:text="Loại Chứng Chỉ"
+                android:textColor="@color/mainText" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listChungChi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/mainBackground"
+                android:dividerHeight="1sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/mainBackground"
+            android:layout_weight="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/classroomButtonCreation"
+                android:background="@drawable/button_background_1"
+                android:text="Thêm Chứng Chỉ"
+                android:layout_marginBottom="35dp"
+                style="@style/button_style" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

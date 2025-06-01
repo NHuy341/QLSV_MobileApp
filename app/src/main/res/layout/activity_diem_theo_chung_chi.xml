@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nen_header1"
+    android:orientation="vertical"
+    tools:context=".DiemTheoChungChi">
+
+    <fragment
+        android:id="@+id/topBar"
+        class="com.example.quanlysinhvien_gk.TopBarHomeIconFragment"
+        tools:layout="@layout/fragment_top_bar_home_icon"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+    </fragment>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/score_student_subject_name"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Điểm Theo Chứng Chỉ"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <SearchView
+            android:id="@+id/classroomSearchView"
+            android:layout_width="257dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+
+            android:gravity="center"
+            android:iconifiedByDefault="false"
+            android:queryHint="Tìm kiếm"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/score_student_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/black"
+                android:dividerHeight="1sp" />
+            <!-- End List View -->
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_add"
+            style="@style/button_style"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/button_background_1"
+            android:text="Thêm"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nen_header1"
+    android:orientation="vertical"
+    tools:context=".ThemDiemChungChiChoSinhVien">
+
+    <fragment
+        android:id="@+id/topBar"
+        class="com.example.quanlysinhvien_gk.TopBarHomeIconFragment"
+        tools:layout="@layout/fragment_top_bar_home_icon"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+    </fragment>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:background="@color/white">
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Thêm Chứng Chỉ Sinh Viên"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_gravity="start"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="100sp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="Loại Chứng Chỉ"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/tv_score_student_edit_subject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="10dp"
+                    android:paddingTop="10dp"
+                    android:text="IELTS"
+                    android:textSize="14sp"
+                    android:textStyle="italic" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_gravity="start"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="100sp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="Mã Sinh Viên"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/tv_score_student_edit_student_id"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="01"
+                    android:textSize="14sp"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_gravity="start"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="100sp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="Họ Và Tên"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/tv_score_student_edit_student_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Le Thi Ngoc Giau"
+                    android:textSize="14sp"
+                    android:textStyle="italic" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_gravity="start"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="100sp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="Số Điểm Đạt:"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/edit_text_score_student_edit_score"
+                    android:layout_marginStart="10dp"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    android:inputType="text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="10" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_scoreave_student_s"
+            style="@style/button_style"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_background_1"
+            android:text="Lưu" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_Huy"
+            style="@style/button_style"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/button_background_4"
+            android:text="Huỷ" />
+
+    </LinearLayout>
+</LinearLayout>

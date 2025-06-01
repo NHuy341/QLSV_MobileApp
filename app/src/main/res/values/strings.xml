@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">QuanLySinhVien_GK</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="teacherName">Lê Thị Ngọc Giàu</string>
+    <string name="teacherId">GV01</string>
+    <string name="DanhSachLop">Danh Sách Sinh Viên</string>
+    <string name="ThongTinSV">Thông Tin Sinh Viên</string>
+    <string name="student_button_add">Thêm Sinh Viên</string>
+    <string name="Xuat_Danh_Sach_Lop">Xuất Danh Sách Sinh Viên</string>
+    <string name="username">Tên đăng nhập</string>
+</resources>

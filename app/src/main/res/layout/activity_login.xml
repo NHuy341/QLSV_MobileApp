@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background2"
+    tools:context=".Login">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@color/nen_header"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+
+            android:padding="25dp">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_gravity="center"
+                android:text="Login"
+                android:textAlignment="center"
+                android:textColor="@color/nen_header1"
+
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtUsername"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:drawableStart="@drawable/email"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:hint="@string/username"
+                android:inputType="text"
+
+                android:textColor="@color/nen_header"
+                android:textColorHint="@color/nhat"
+                android:textSize="15dp"
+                android:background="@drawable/lavender_border"
+                />
+
+            <EditText
+                android:id="@+id/txtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+
+                android:background="@drawable/lavender_border"
+                android:drawableStart="@drawable/pass"
+                android:padding="10dp"
+
+                android:hint="Mật khẩu"
+                android:inputType="textPassword"
+                android:textColor="@color/nen_header"
+
+                android:textColorHint="@color/nhat"
+                android:textSize="15dp"
+                 />
+
+
+            <Button
+                android:id="@+id/btnSignIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/nen_header1"
+                android:text="Đăng nhập"
+                android:layout_gravity="center"
+                 />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
